@@ -4,38 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Evaluación de Baloncesto</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <h1>Evaluación de Baloncesto</h1>
 
-    <form>
-        <p>1. ¿Quién fue el creador del baloncesto?</p>
-        <label><input type="radio" name="q1" value="a"> Michael Jordan</label><br>
-        <label><input type="radio" name="q1" value="b"> James Naismith</label><br>
-        <label><input type="radio" name="q1" value="c"> Kobe Bryant</label>
-
-        <p>2. ¿En qué año se fundó el baloncesto?</p>
-        <label><input type="radio" name="q2" value="a"> 1891</label><br>
-        <label><input type="radio" name="q2" value="b"> 1901</label><br>
-        <label><input type="radio" name="q2" value="c"> 1921</label>
-
-        <p>3. ¿Qué es driblar en el baloncesto?</p>
-        <label><input type="radio" name="q3" value="a"> Correr sin la pelota</label><br>
-        <label><input type="radio" name="q3" value="b"> Rebotar el balón continuamente mientras te desplazas</label><br>
-        <label><input type="radio" name="q3" value="c"> Saltar en defensa</label>
-
-        <p>4. ¿Cuál es la posición básica en el baloncesto?</p>
-        <label><input type="radio" name="q4" value="a"> Sentado en la banca</label><br>
-        <label><input type="radio" name="q4" value="b"> Cuerpo en equilibrio y flexionado</label><br>
-        <label><input type="radio" name="q4" value="c"> En la línea de 3 puntos</label>
-
-        <p>5. ¿Cuál es la medida de una cancha de baloncesto reglamentaria?</p>
-        <label><input type="radio" name="q5" value="a"> 28 metros de largo por 15 de ancho</label><br>
-        <label><input type="radio" name="q5" value="b"> 30 metros de largo por 20 de ancho</label><br>
-        <label><input type="radio" name="q5" value="c"> 25 metros de largo por 12 de ancho</label>
-
-        <br><br>
-        <button type="submit">Enviar</button>
+    <form id="quizForm">
+        <div id="questionsContainer"></div>
+        <button type="button" onclick="evaluateQuiz()">Enviar</button>
     </form>
+
+    <div id="result"></div>
+
+    <script src="script.js"></script>
 </body>
 </html>
